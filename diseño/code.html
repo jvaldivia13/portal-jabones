@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Soapery | Artisanal Botanical Soap</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-surface": "#1d1b16",
+                        "on-tertiary-fixed-variant": "#3b4b36",
+                        "on-secondary-fixed-variant": "#554338",
+                        "on-error-container": "#93000a",
+                        "secondary": "#6f5a4e",
+                        "surface-container-highest": "#e7e2d9",
+                        "primary-container": "#67432c",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#ffdbc8",
+                        "on-secondary-container": "#756054",
+                        "on-tertiary-fixed": "#101f0d",
+                        "secondary-container": "#f9ddcd",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#efbc9e",
+                        "on-tertiary-container": "#afc1a6",
+                        "inverse-primary": "#efbc9e",
+                        "surface-container": "#f3ede4",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1d1b16",
+                        "primary": "#4d2d18",
+                        "surface-tint": "#7c563d",
+                        "surface-container-low": "#f9f3ea",
+                        "outline": "#83746d",
+                        "tertiary-fixed-dim": "#b9ccb0",
+                        "surface-variant": "#e7e2d9",
+                        "on-primary-container": "#e3b194",
+                        "surface-container-high": "#ede7de",
+                        "on-surface-variant": "#50443e",
+                        "on-secondary-fixed": "#27180f",
+                        "tertiary-container": "#40503a",
+                        "secondary-fixed-dim": "#dcc1b2",
+                        "inverse-on-surface": "#f6f0e7",
+                        "on-primary-fixed": "#2f1403",
+                        "inverse-surface": "#32302a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#623f28",
+                        "surface": "#fff9ef",
+                        "surface-bright": "#fff9ef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#f9ddcd",
+                        "tertiary": "#293925",
+                        "background": "#fff9ef",
+                        "outline-variant": "#d5c3ba",
+                        "tertiary-fixed": "#d5e8cb",
+                        "surface-dim": "#dfd9d1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fff9ef; color: #1d1b16; }
+        h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .editorial-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem; }
+        .satin-cta { background: linear-gradient(145deg, #4d2d18 0%, #67432c 100%); transition: all 0.3s ease; }
+        .satin-cta:hover { opacity: 0.9; transform: translateY(-1px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm shadow-orange-950/5">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
+<div class="text-2xl font-serif tracking-tight text-orange-950 dark:text-orange-50">
+                Aura Soapery
+            </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[11px] uppercase tracking-[0.1em] font-medium text-orange-950 dark:text-orange-50 border-b border-orange-950/30 pb-1 transition-opacity duration-300" href="#">Collections</a>
+<a class="text-[11px] uppercase tracking-[0.1em] font-medium text-stone-500 dark:text-stone-400 hover:text-orange-900 transition-opacity duration-300" href="#">About Us</a>
+<a class="text-[11px] uppercase tracking-[0.1em] font-medium text-stone-500 dark:text-stone-400 hover:text-orange-900 transition-opacity duration-300" href="#">Wholesale</a>
+<a class="text-[11px] uppercase tracking-[0.1em] font-medium text-stone-500 dark:text-stone-400 hover:text-orange-900 transition-opacity duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-orange-950 dark:text-orange-50 hover:opacity-80 transition-all active:scale-95">shopping_bag</button>
+<button class="md:hidden material-symbols-outlined text-orange-950">menu</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 w-full editorial-grid relative z-10">
+<div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
+<span class="text-[0.6875rem] uppercase tracking-[0.2em] font-semibold text-primary mb-6">Handcrafted in Small Batches</span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl leading-[1.1] text-primary tracking-tight mb-8">
+                    Gentle Cleansing <span class="italic font-normal">Soap</span> For Soft and Radiant Skin
+                </h1>
+<p class="text-lg text-secondary max-w-md mb-10 leading-relaxed">
+                    Experience the purity of botanical oils and organic herbs, meticulously formulated to nourish your skin's natural glow.
+                </p>
+<div class="flex items-center gap-6">
+<a class="satin-cta text-on-primary px-10 py-5 rounded-full font-medium tracking-wide shadow-xl shadow-primary/10" href="#collections">BUY NOW</a>
+<a class="text-primary border-b border-primary/20 pb-1 text-sm font-semibold tracking-wider" href="#">OUR STORY</a>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-6 relative mt-12 lg:mt-0">
+<div class="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/5">
+<img alt="Artisanal Lavender Soap" class="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-1000" data-alt="Close-up of three rustic, rectangular bars of handmade lavender soap with dried flowers on top, sitting on a natural beige linen cloth with soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGI7G9Ss05_aBfN5g63wYfQhp_Qeevui876YMxsUeVJkv5mu2InCyrKE74jC3HFEEsSYypFY8P990Yk2uSTflCrHu2PMft3xZu3B4r8X0KMGLRfmggm4c-hj-qP5wq30n8Ew68OZbI4i6cbBQhIqs8-G1Muz_nyylyW5z6d3bYOmPmX0cCWvkMwoQ-t48JGHomtWFdZxDu0NM82DJFSYADVMb8yFRFFiBTBYMtxLvyRn_Yat6sJdEpYIVdggJR1AKWPtY-e5s-oIM"/>
+</div>
+<div class="absolute -bottom-10 -left-10 hidden xl:block w-64 aspect-square rounded-2xl overflow-hidden shadow-xl border-8 border-surface translate-y-4">
+<img alt="Organic Ingredients" class="w-full h-full object-cover" data-alt="Overhead view of fresh lavender sprigs and a small wooden bowl filled with coarse sea salt on a textured cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-6yweRwkqIkHCSs8btQsLjF30hgvmz588VAaJHVyBR6Rqcx0fN8VscVDDncLxT3RI2gr4TeH8gAsFGPhkxyaOgWhHKVCXiEBk5kIYMvCFqXzrteYs4uRbOjYyFj2OvU6R8YJ9O9Pdb6DqAV9DDYjecSV_cAIHiMTB2Py81QjzZIM-hSv6FZf3vLXBoSzKBG0v1tw4_9s1CTc3Q6pSLqOEu7YoupAj-ZkwOZOoC9o5JBhOXyQJvAEz1emMHCR2_cSIkMe-ONq7U4"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Collections Section -->
+<section class="py-32 bg-surface-container-low" id="collections">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl text-primary mb-4">Our Signature Collections</h2>
+<div class="h-1 w-20 bg-primary/10 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Scrub Soap -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-[2rem] mb-8">
+<img alt="Scrub Soap" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A textured bar of exfoliating soap with poppy seeds and citrus zest, resting on a flat river stone with soft water droplets around it." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg9EAkw2i4wF0jmWl56DY2CtRTz4junk92BRANDQN55I_0eJxQkoUA1Eoygn4I5oSdBJMgQbBJxs9xx6urwEzuuCDKjSg4LD3gFBIPO3xWWtHdUV-RT8rlSYfCL26_3bl_mjDzh6dJmAVdzjfSEGpuyZQOcr5HiezXK3aCxAf_D2FDIQm3wZwiCIXw8eYUQFBXBLgTvQC8Z10K_JUXf2t3LQnwRCqC0tMURR_3qDJZBi_1irpuuAngyA31jQa_s5A_QluftTDX5uc"/>
+</div>
+<h3 class="text-2xl text-primary mb-2">Scrub Soap</h3>
+<p class="text-stone-500 mb-4 font-light italic">Natural exfoliation for a renewed texture.</p>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold text-primary group-hover:underline underline-offset-8 transition-all">Explore Collection</span>
+</div>
+<!-- Anti-Aging Soap -->
+<div class="group cursor-pointer mt-12 md:mt-24">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-[2rem] mb-8">
+<img alt="Anti-Aging Soap" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="An elegant cream-colored soap bar next to a glass bottle of rosehip oil and pink rose petals on a matte white surface with warm shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP5uXP-DQ_iM4VNunrLM291_O31fMQkT-orYLbi8PTwkeKdUu3A0BuSp1fcxEPVaspYb0ioC9T3Iou0zwO4OShOlLVia27te8LJnTtMAAXVDjitznHUnUGdc9G8iPMhuX8ZNwg7y1fH_5t1xSqvZB1B0NrqjkU5DUEh6bVIkEARy4dOc9QB1s1an9uv8jPSCNFq3Ix1mveGYJArVtn3TmP62EergQBn4pqbPrb6uxBEBBxNBTPh_n0Ych5KT6H72QiaHhm6TRGB2A"/>
+</div>
+<h3 class="text-2xl text-primary mb-2">Anti-Aging Soap</h3>
+<p class="text-stone-500 mb-4 font-light italic">Nurturing botanicals for timeless radiance.</p>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold text-primary group-hover:underline underline-offset-8 transition-all">Explore Collection</span>
+</div>
+<!-- Organic Baby Soap -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-[2rem] mb-8">
+<img alt="Organic Baby Soap" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A gentle, uncolored pure white soap bar wrapped in soft cotton muslin cloth next to a bunch of dried chamomile flowers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi1k4rMMLlnDK6eXXT60B9_sqK_HoZXsqzNcK9Wwr-4NZ5v5vDXd_zR1OFZaux4Hq444Qdyh98ycxO04gudSAGH-9Ev3IvJg_ZqWeogQYhQTYaCtuJSAlAHo-ScOzYpU3z-xlOKRJGXzVKJwfIBJCbT9VR6_6XSgkvBHT3DF8j729scaHcNnRQ_MG8TXX-KxdnoNpB-GVbGWaIveXcFh6YTD1yRBEbsTYzZ26AZ5f1gWYlDfGLi5yhCO25MR5DpsW856VFtLlpM2s"/>
+</div>
+<h3 class="text-2xl text-primary mb-2">Organic Baby Soap</h3>
+<p class="text-stone-500 mb-4 font-light italic">Hypoallergenic care for the gentlest skin.</p>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold text-primary group-hover:underline underline-offset-8 transition-all">Explore Collection</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Herbal Collections Grid -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-[0.6875rem] uppercase tracking-[0.2em] font-semibold text-tertiary">Our Herbarium</span>
+<h2 class="text-4xl text-primary mt-4">Herbal Collections</h2>
+</div>
+<a class="text-sm font-medium text-primary underline underline-offset-4" href="#">View All Products</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface mb-6">
+<img alt="Organic Aloe Vera Soap" class="w-full h-full object-cover" data-alt="A translucent green soap bar with embedded aloe vera chunks on a white ceramic dish with water droplets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBommWGSdTZv7qAoGV3z2o22-NUPIOV8dr9dexiZur7UQzmYHu1oHWxyWWppsskQHp-p9uPwFg2sae8pNanOlXKf75mh3cIRhKz5Dp4CoOP9MuVBqGJX_XyE-YnuvihmyuiB3LVq1xiYLuRi0VzskeHkFcBTmGDLVTtr5AWpT5-DZ-txMSOkI4JktM9ICKOtvmeDRyYyZowVADjANVo0z_hIjMQrABYIuHlm4XzrwgVNUyb9QdyyfIgNl4edMTF9iVGwn9CaUM-mRA"/>
+</div>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] text-stone-400 ml-2">(48)</span>
+</div>
+<h4 class="text-xl text-primary mb-2">Organic Aloe Vera Soap</h4>
+<p class="text-tertiary-fixed-dim text-lg font-semibold">$18.00</p>
+<div class="mt-4 flex gap-2">
+<span class="bg-tertiary-container/10 text-on-tertiary-fixed-variant text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-bold">Soothing</span>
+<span class="bg-tertiary-container/10 text-on-tertiary-fixed-variant text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-bold">Aloe</span>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface mb-6">
+<img alt="Green Gel Aloe Vera Soap" class="w-full h-full object-cover" data-alt="A vibrant, clear green gel-based soap bar with fresh aloe vera leaves standing in the background on a light stone surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpE9jdGP_XWByRf2DYfy1WwLcoib9iOWoSY5Eb2PA_RjFclYnhQ5xsW9M9l2-PdBi9jXmiv7Kvqs67Wlczu23F7tkzL2hxakDrwEPk3Jr41MO3v4ykbN-7EkJ1DQhHc_gCA8_BjOluiOFDy_y28adEXggmiu4HilIkomaHM2apI8zoiJ2dIet0S4ozWIkM_zys7rpr6l618PFjII9Zlt93Hziz-XMa-o6EKSEFtDg0JxOCKOISpC7iRjCmZQTuhwDiDVZnmLsEBWo"/>
+</div>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="text-[10px] text-stone-400 ml-2">(32)</span>
+</div>
+<h4 class="text-xl text-primary mb-2">Green Gel Aloe Vera Soap</h4>
+<p class="text-tertiary-fixed-dim text-lg font-semibold">$22.00</p>
+<div class="mt-4 flex gap-2">
+<span class="bg-tertiary-container/10 text-on-tertiary-fixed-variant text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-bold">Refreshing</span>
+<span class="bg-tertiary-container/10 text-on-tertiary-fixed-variant text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-bold">Eco-Safe</span>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface mb-6">
+<img alt="Herbal Neem Soap" class="w-full h-full object-cover" data-alt="Deep earthy green rectangular soap bars stacked neatly, with small dark neem leaves scattered around on a rough wooden plank." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpyxxYe_QE6luoUWLX2SQNe5Hbmbf0C34z4AxPBh_zW0YgrvxVb5A7Pc9bkYrMLx2A9j68hLwsuV2bl0Gqhw2SegVuixvlwdF_rkGl1V0VPQ_VTKPgIBeIm-bGbaHDg-GmFaxq66EetLUj1xqHSPZzYd11CXONinIn9CwEDyZoLtYSUCkxO83UbEJHcXix0v44KPTsLT5OoySvM6GYb3RZI1_Y0W-SKjHB9aOGvNfvaAY0bofzLTBi6GQeYZrUAYcPyyUFZrWLv40"/>
+</div>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] text-stone-400 ml-2">(56)</span>
+</div>
+<h4 class="text-xl text-primary mb-2">Herbal Neem Soap</h4>
+<p class="text-tertiary-fixed-dim text-lg font-semibold">$20.00</p>
+<div class="mt-4 flex gap-2">
+<span class="bg-tertiary-container/10 text-on-tertiary-fixed-variant text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-bold">Deep Clean</span>
+<span class="bg-tertiary-container/10 text-on-tertiary-fixed-variant text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-bold">Detox</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Spa-Inspired Promo -->
+<section class="relative h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Spa Experience" class="w-full h-full object-cover" data-alt="A serene scene showing hands being washed with rich white foam in a stone basin, soft steam rising in a dimly lit, minimalist spa setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQPvTsECkZTBxsE_5nWG3lXIgMV5iZgYupNi_VC3OF9uIZbhJC4EGuJPDpbfX8iK3SmFq9btEf8dQ_JmAF5bmrgfrTKU51FBtR-uTY8_7BLk28YLPsKXHGarVcDLUAX8ICctcUNHdM4xHTjgRQi3l_H9HorPuzfzpDBGxRzalhSNwWdSG1yB96UmU6wIRT3b0B3skI2EqxfAvfLIe8ji4Jv9bbQUFyNGVQlS3xSXTQIBNmeTgtnOs3_nWDlPBoElKhDWqtvtXRLjI"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full text-center lg:text-left">
+<div class="max-w-2xl bg-surface/90 backdrop-blur-md p-12 md:p-20 rounded-[3rem] shadow-2xl shadow-primary/20">
+<span class="text-[0.6875rem] uppercase tracking-[0.3em] font-bold text-primary mb-6 block">Limited Time Offer</span>
+<h2 class="text-4xl md:text-6xl text-primary leading-tight mb-8">20% OFF ON <span class="italic">Spa-Inspired</span> Collections</h2>
+<p class="text-secondary mb-10 text-lg">Transform your daily routine into a rejuvenating ritual with our curated aromatic sets.</p>
+<a class="inline-block satin-cta text-on-primary px-12 py-5 rounded-full font-semibold shadow-lg" href="#">CLAIM DISCOUNT</a>
+</div>
+</div>
+</section>
+<!-- Product Highlight: Green Mint Soap -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8 editorial-grid">
+<div class="col-span-12 lg:col-span-6 bg-surface-container-low rounded-[3rem] overflow-hidden p-8 flex items-center justify-center">
+<img alt="Green Mint Soap" class="max-w-full h-auto drop-shadow-2xl" data-alt="A close-up shot of a fresh mint-green soap bar with actual mint leaf fragments visible inside, resting on a white marble slab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5KYzu5B_8eM2gyEf4jguXDs9uJhtYwc26hRPfE60GNQpWHcamA2JAdTEO3J1Kp39wEDErv2R-SI7Wb8usgaux3uOxy2m8e7MTU7RtHQiLjl3rP1AYiyqTn_GO4ZiQZcePikdprozsI6aH9N9r7RwBfNYd8W2JKH98qGXd7Q7dPz3YL8YfKIsCGcgqI7myquJSNWlHBZhEpn7AfZWson-QMamWP6EKZQMYs-RliTW_qy1bNmiGo0qC4m6vLbH_YFmLRQa6AkshYnc"/>
+</div>
+<div class="col-span-12 lg:col-span-6 flex flex-col justify-center lg:pl-12">
+<span class="text-[0.6875rem] uppercase tracking-[0.2em] font-bold text-tertiary-container mb-4">Summer Freshness</span>
+<h2 class="text-5xl text-primary mb-6">Green Mint Soap</h2>
+<div class="flex items-center gap-4 mb-8">
+<span class="text-3xl font-serif text-primary">$15.00 – $28.00</span>
+<span class="bg-tertiary/10 text-tertiary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">In Stock</span>
+</div>
+<div class="mb-10">
+<p class="text-sm font-bold text-primary uppercase tracking-widest mb-4">Choose Weight</p>
+<div class="flex gap-4">
+<button class="px-6 py-3 rounded-xl border border-primary text-primary font-medium">100g</button>
+<button class="px-6 py-3 rounded-xl border border-outline-variant text-stone-500 hover:border-primary hover:text-primary transition-all">200g</button>
+<button class="px-6 py-3 rounded-xl border border-outline-variant text-stone-500 hover:border-primary hover:text-primary transition-all">500g (Family Pack)</button>
+</div>
+</div>
+<div class="flex gap-4 mb-10">
+<button class="flex-1 satin-cta text-on-primary py-5 rounded-full font-bold shadow-xl shadow-primary/10">ADD TO CART</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="pt-8 border-t border-outline-variant/30">
+<p class="text-xs uppercase tracking-widest font-semibold text-stone-400 mb-4">Secure Checkout Powered By</p>
+<div class="flex gap-6 grayscale opacity-60">
+<span class="font-bold text-xl text-primary">PayPal</span>
+<span class="font-bold text-xl text-primary">VISA</span>
+<span class="font-bold text-xl text-primary">MasterCard</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl text-primary mb-4">Team Colleagues</h2>
+<p class="text-secondary italic">The passionate minds behind every handcrafted bar.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- CEO -->
+<div class="text-center group">
+<div class="relative inline-block mb-8">
+<div class="w-48 h-48 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 mx-auto">
+<img alt="Founder &amp; CEO" class="w-full h-full object-cover" data-alt="A professional portrait of a woman with a warm smile, wearing a cream silk blouse, standing against a soft-focus garden background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9BDSNqNyb9dQMRMi6KDTZCfdjG3ojFfVtHQBjJCSWH8y258SH4-lN4N0uzzU3liN3gPS4ww0hSqD4EKIoAjhOIqkDYVLkiPcc_ZSKD3dgqFLsL7hntlQJOWUMGfFwpwEprnfehRJumEmI9kBBs6rYv9LslmHXlTDiWEdz0pAxQ8gaKlzwrvHIKqBxjSgp_Nx1SCz_rhHd858CbR4NNsFF0foYCiVr62hJU0t2cMsZ-F3-QpCn_JBmMs8sCxRP8GqVB2fCMWhVSpg"/>
+</div>
+<div class="absolute -bottom-2 right-1/2 translate-x-1/2 bg-surface px-6 py-2 rounded-full shadow-lg border border-surface-container">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">CEO &amp; Founder</span>
+</div>
+</div>
+<h4 class="text-2xl text-primary">Eleanor Vance</h4>
+<p class="text-stone-500 mt-2 font-light">Visionary &amp; Master Alchemist</p>
+</div>
+<!-- Chemist -->
+<div class="text-center group">
+<div class="relative inline-block mb-8">
+<div class="w-48 h-48 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 mx-auto">
+<img alt="Formulation Chemist" class="w-full h-full object-cover" data-alt="A woman in her late 30s with curly hair, wearing a white lab coat, looking thoughtfully at a clear beaker filled with essential oils." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA98IhYe0sXkZl3dI-18G2GV2VNYLQ0v3upqAPXpjvVWPmumFMCxmHEvylTb0GMbC2r9xFY2HVADG1cAj5Ebq6l16kirGdd_zswhqeTyu90geXyX1F83nb0yLLLMoVPNWSLVRoucDeRHdoDXuINSFWUhAFYrCX2PR7aqgQV7dABZtH60yf36VUoyGtlZmAiM7teSdoY5brGCiAhztPSMQCj9uAu_2PvaaP6A67hU0WRcB__QNYPVXQXg7JG1VBCdHINswvQ6wiMQVM"/>
+</div>
+<div class="absolute -bottom-2 right-1/2 translate-x-1/2 bg-surface px-6 py-2 rounded-full shadow-lg border border-surface-container">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Formulation Chemist</span>
+</div>
+</div>
+<h4 class="text-2xl text-primary">Dr. Sarah Chen</h4>
+<p class="text-stone-500 mt-2 font-light">Molecular Botanical Specialist</p>
+</div>
+<!-- Supervisor -->
+<div class="text-center group">
+<div class="relative inline-block mb-8">
+<div class="w-48 h-48 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 mx-auto">
+<img alt="Manufacturing Supervisor" class="w-full h-full object-cover" data-alt="A man with a tidy beard wearing a linen apron, working in a sun-drenched workshop filled with wooden soap molds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkWajkKKUCGQGup8wMXT4NvMpcR02E0G01SiiOfUW0ljKe6mz9yk1fcuO5IesVBEoB14SxP0fE_yHF1UoWc1SzsYYAYx3SSdkFxuFOFZnTuARNh_M5lYLPnDkb5_dhMOYyr78Vcvah6PpyHYewpUmHwzcJ63sewf-0DzZnywt5WbMNKjg4tNcMFqC6388WHRq6AclGOxN0JLJn5FbBRJ_CZKzA4Y59_yKSj0B_pC2eD5iNPCRhfWT-O14aCYziLftjTjCcZJ5Kp20"/>
+</div>
+<div class="absolute -bottom-2 right-1/2 translate-x-1/2 bg-surface px-6 py-2 rounded-full shadow-lg border border-surface-container">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Manufacturing Supervisor</span>
+</div>
+</div>
+<h4 class="text-2xl text-primary">Julian Thorne</h4>
+<p class="text-stone-500 mt-2 font-light">Artisan Production Lead</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<span class="text-[0.6875rem] uppercase tracking-[0.2em] font-bold text-primary mb-4 block">Tailored for You</span>
+<h2 class="text-4xl md:text-5xl text-primary mb-4">Wallet-Friendly Choices</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Tier 1 -->
+<div class="bg-surface-container p-12 rounded-[2.5rem] border border-outline-variant/10 flex flex-col h-full">
+<h3 class="text-2xl text-primary mb-6">Offers &amp; Discounts</h3>
+<p class="text-stone-500 mb-8 font-light">Perfect for treating yourself to occasional luxury.</p>
+<div class="text-4xl font-serif text-primary mb-8">Save <span class="italic">15%</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-tertiary text-sm">check_circle</span> Monthly curated boxes</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-tertiary text-sm">check_circle</span> Early access to scents</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-tertiary text-sm">check_circle</span> Birthday gifts</li>
+</ul>
+<button class="w-full py-4 rounded-full border border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">JOIN THE CLUB</button>
+</div>
+<!-- Tier 2 -->
+<div class="bg-primary text-on-primary p-12 rounded-[2.5rem] shadow-2xl shadow-primary/20 flex flex-col h-full scale-105">
+<div class="flex justify-between items-start mb-6">
+<h3 class="text-2xl font-serif">Corporate Gifts</h3>
+<span class="bg-on-primary/10 text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">Most Popular</span>
+</div>
+<p class="text-on-primary/70 mb-8 font-light">Elevate your brand with artisanal sustainable gifts.</p>
+<div class="text-4xl font-serif mb-8">From <span class="italic">$450</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-on-primary/50 text-sm">check_circle</span> Custom packaging design</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-on-primary/50 text-sm">check_circle</span> Bulk discount pricing</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-on-primary/50 text-sm">check_circle</span> Fast nationwide shipping</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-on-primary/50 text-sm">check_circle</span> Custom scent creation</li>
+</ul>
+<button class="w-full py-4 rounded-full bg-white text-primary font-bold shadow-xl">INQUIRE NOW</button>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container p-12 rounded-[2.5rem] border border-outline-variant/10 flex flex-col h-full">
+<h3 class="text-2xl text-primary mb-6">Customized Plan</h3>
+<p class="text-stone-500 mb-8 font-light">Bespoke formulations for unique skin requirements.</p>
+<div class="text-4xl font-serif text-primary mb-8 italic">Bespoke</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-tertiary text-sm">check_circle</span> Skin profile consultation</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-tertiary text-sm">check_circle</span> Personalized ingredients</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-tertiary text-sm">check_circle</span> Subscription refills</li>
+</ul>
+<button class="w-full py-4 rounded-full border border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">TALK TO EXPERT</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Stories -->
+<section class="py-32 bg-tertiary text-on-tertiary overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="editorial-grid">
+<div class="col-span-12 lg:col-span-4">
+<h2 class="text-4xl md:text-5xl leading-tight">Customer <br/><span class="italic font-normal">Stories</span></h2>
+<p class="mt-8 text-on-tertiary-container/80 text-lg italic">"Aura Soapery has completely changed my self-care ritual. The scents are transportive."</p>
+<div class="mt-12 flex gap-4">
+<button class="w-12 h-12 rounded-full border border-on-tertiary/20 flex items-center justify-center hover:bg-on-tertiary/10 transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-on-tertiary/20 flex items-center justify-center hover:bg-on-tertiary/10 transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8">
+<div class="flex gap-8 overflow-x-hidden pt-12">
+<div class="min-w-[400px] bg-white/5 backdrop-blur-lg p-10 rounded-[2.5rem]">
+<div class="flex items-center gap-4 mb-8">
+<img alt="Testimonial User" class="w-16 h-16 rounded-full object-cover grayscale" data-alt="A portrait of a young woman with glowing skin and a gentle smile, shot in soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9alYHkWnyb7Gomyotc06uD2nww6WZbFpwGCjUSB3vPSwQYCTFm5QC-DHDjjSyUlNXcHmIUBZNytB5TrraWUNQrdVValLh_g05LIaWzEJx67LhqTaoY1qk2dfJNT6VjZG1wI5_guSu4yfW6sRvFwpNUu2Tlv0fuCQ9GF5ixy2H6YEXg40WwsypCE39LYmptlKQnBXMqRCrwc1Mme6uFU577HnIoiBjTxb-LYlys7ZMwcKvjPW3LoV8uGSPqr7OdhqhrRw62CAoV-Q"/>
+<div>
+<h5 class="font-bold">Sophia Martinez</h5>
+<p class="text-xs text-on-tertiary-container/60 uppercase tracking-widest">New York, NY</p>
+</div>
+</div>
+<p class="text-xl leading-relaxed italic">"The Lavender &amp; Charcoal bar is a dream. It deep cleans without that 'tight' feeling. Truly artisanal quality."</p>
+</div>
+<div class="min-w-[400px] bg-white/5 backdrop-blur-lg p-10 rounded-[2.5rem] opacity-50">
+<div class="flex items-center gap-4 mb-8">
+<img alt="Testimonial User" class="w-16 h-16 rounded-full object-cover grayscale" data-alt="A portrait of a man in his late 20s with a relaxed expression, wearing a simple linen shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABN1y24eP34-zu1yfzgVf6_cBMw3ly3CBeNaWFNW6hxgWMHB2H652FuHQErUp3jge9VEqxYvE8O98oWkLtUKdSJIWGOPkiEB8b8mhATqJtZqHfjq8UJWZHZ76lFN3gXMHJFiej-djID9lwXOmFayArAc1Y9kSAcsdnGiSXMP07HX7j_pIoHBidjQmaiu5n5tHWsijlQf_YyK0DTaTM274JM9GLtSkwP1xxY3_wqhi7o-ZFWHaavmyNqsJRtEXKhPMGHKfVCNoNBy0"/>
+<div>
+<h5 class="font-bold">David Wilson</h5>
+<p class="text-xs text-on-tertiary-container/60 uppercase tracking-widest">Austin, TX</p>
+</div>
+</div>
+<p class="text-xl leading-relaxed italic">"I bought the wholesale corporate set for my team. The feedback was incredible. Best gift choice yet!"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full py-16 px-8 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif text-orange-950 dark:text-orange-50 mb-6">Aura Soapery</div>
+<p class="text-stone-600 dark:text-stone-400 text-sm leading-relaxed mb-8">
+                    Handcrafting sustainable botanical skincare since 2018. Pure. Ethical. Radiant.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-500">public</span>
+<span class="material-symbols-outlined text-stone-500">local_florist</span>
+<span class="material-symbols-outlined text-stone-500">eco</span>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-orange-950 dark:text-orange-50 mb-6 uppercase tracking-widest text-[11px]">Shop</h5>
+<ul class="space-y-4">
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">All Collections</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm underline decoration-orange-950/20" href="#">Shipping Policy</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">Sustainability</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">Wholesale Login</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-orange-950 dark:text-orange-50 mb-6 uppercase tracking-widest text-[11px]">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">Our Story</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">Privacy</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">Contact Us</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-orange-200 transition-colors text-sm" href="#">Find a Stockist</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-orange-950 dark:text-orange-50 mb-6 uppercase tracking-widest text-[11px]">Contact Details</h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 mb-4">123 Botanical Lane<br/>Garden City, NY 11530</p>
+<p class="text-sm text-stone-600 dark:text-stone-400 mb-4">hello@aurasoapery.com</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">+1 (555) 890-3456</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-200 dark:border-stone-800 flex justify-between items-center">
+<p class="text-stone-600 dark:text-stone-400 text-xs">© 2024 Aura Soapery. Handcrafted for your skin.</p>
+<div class="flex gap-8">
+<span class="text-[10px] text-stone-400 uppercase tracking-widest">Instagram</span>
+<span class="text-[10px] text-stone-400 uppercase tracking-widest">Pinterest</span>
+</div>
+</div>
+</footer>
+</body></html>
