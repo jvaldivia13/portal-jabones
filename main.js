@@ -1,3 +1,14 @@
+/* ─── EMAILJS CONFIG ──────────────────────────────────────────────────────
+   1. Crea cuenta en https://www.emailjs.com (plan Free: 200 emails/mes)
+   2. En Email Services → Add New Service → Gmail (o el que uses)
+   3. En Email Templates → Create New Template (ver instrucciones abajo)
+   4. En Account → General → Public Key
+   Reemplaza los tres valores de abajo con los tuyos.
+────────────────────────────────────────────────────────────────────────── */
+const EMAILJS_PUBLIC_KEY  = '-uMsuloJLZxGuY1Eo';
+const EMAILJS_SERVICE_ID  = 'service_qxa8lym';
+const EMAILJS_TEMPLATE_ID = 'template_9grj0xq';
+
 const PRODUCTS = [
     { id:1, name:'Jabón de Colágeno', category:'Anti-Envejecimiento', tag:null, price:25, weight:100,
       desc:'Rejuvenece tu piel mejorando su elasticidad y firmeza natural con colágeno hidrolizado.',
@@ -265,6 +276,97 @@ function handleContact(e) {
     
     showToast('Redirigiendo a WhatsApp...');
     e.target.reset();
+}
+
+/* ─── LIBRO DE RECLAMACIONES ─── */
+
+function openReclamaciones() {
+    document.getElementById('reclamacionesBackdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeReclamaciones(e) {
+    if (e && e.target !== document.getElementById('reclamacionesBackdrop')) return;
+    document.getElementById('reclamacionesBackdrop').classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+function generarCodigo() {
+    const hoy = new Date();
+    const fecha = hoy.getFullYear().toString() +
+        String(hoy.getMonth() + 1).padStart(2, '0') +
+        String(hoy.getDate()).padStart(2, '0');
+    const random = Math.floor(1000 + Math.random() * 9000);
+    return `KARIM-${fecha}-${random}`;
+}
+
+function handleReclamaciones(e) {
+    e.preventDefault();
+
+    const nombre      = document.getElementById('recNombre').value.trim();
+    const dni         = document.getElementById('recDni').value.trim();
+    const email       = document.getElementById('recEmail').value.trim();
+    const telefono    = document.getElementById('recTelefono').value.trim();
+    const direccion   = document.getElementById('recDireccion').value.trim();
+    const tipoBien    = document.querySelector('input[name="recTipoBien"]:checked').value;
+    const producto    = document.getElementById('recProducto').value;
+    const monto       = document.getElementById('recMonto').value || 'No especificado';
+    const tipo        = document.querySelector('input[name="recTipo"]:checked').value;
+    const descripcion = document.getElementById('recDescripcion').value.trim();
+    const pedido      = document.getElementById('recPedido').value.trim();
+
+    if (!nombre || !dni || !email || !telefono || !direccion || !producto || !descripcion || !pedido) {
+        showToast('Completa todos los campos obligatorios.');
+        return;
+    }
+
+    const codigo = generarCodigo();
+    const fecha  = new Date().toLocaleDateString('es-PE', { day:'2-digit', month:'long', year:'numeric' });
+
+    const btn = document.getElementById('recSubmitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    const templateParams = {
+        codigo,
+        fecha,
+        tipo,
+        nombre,
+        dni,
+        email_consumidor: email,
+        telefono,
+        direccion,
+        tipo_bien: tipoBien,
+        producto,
+        monto,
+        descripcion,
+        pedido,
+        reply_to: email
+    };
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+            document.getElementById('reclamacionesForm').innerHTML = `
+                <div style="text-align:center;padding:3rem 1rem;">
+                    <div style="font-size:2.5rem;margin-bottom:1rem;">✓</div>
+                    <h3 style="font-family:'Gilda Display',serif;color:#8B0000;margin-bottom:0.8rem;">Reclamo registrado</h3>
+                    <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1.2rem;">Hemos recibido tu ${tipo.toLowerCase()} correctamente.</p>
+                    <div style="background:var(--cream2);padding:1rem 2rem;display:inline-block;margin-bottom:1.5rem;">
+                        <div style="font-size:0.65rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Código de seguimiento</div>
+                        <div style="font-size:1.1rem;font-weight:700;color:var(--dark);margin-top:0.3rem;">${codigo}</div>
+                    </div>
+                    <p style="color:var(--muted);font-size:0.8rem;">Recibirás una respuesta en <strong>tu correo electrónico</strong> en un plazo máximo de 30 días calendario.</p>
+                    <button onclick="closeReclamaciones()" style="margin-top:1.5rem;padding:0.7rem 2rem;background:var(--dark);color:white;border:none;cursor:pointer;font-size:0.85rem;">Cerrar</button>
+                </div>`;
+            document.body.style.overflow = '';
+        })
+        .catch(() => {
+            showToast('Error al enviar. Intenta por WhatsApp o email.');
+            btn.disabled = false;
+            btn.textContent = 'Enviar Reclamo o Queja';
+        });
 }
 
 function handleNewsletter(e) {

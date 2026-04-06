@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@300;400;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -218,7 +220,149 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="mailto:janovaldivia@gmail.com" style="color:rgba(255,255,255,0.4);margin-right:1.5rem;">janovaldivia@gmail.com</a>
         <a href="https://wa.me/51953908876" target="_blank" style="color:rgba(255,255,255,0.4);">+51 953 908 876</a>
     </p>
+    <div class="footer-reclamaciones">
+        <button class="btn-reclamaciones" onclick="openReclamaciones()">
+            <span class="rec-book-icon">📋</span>
+            <div class="rec-text">
+                <span class="rec-title">Libro de Reclamaciones</span>
+                <span class="rec-sub">Conforme a Ley N° 29571</span>
+            </div>
+        </button>
+    </div>
 </footer>
+
+<!-- ═══ MODAL LIBRO DE RECLAMACIONES ═══ -->
+<div class="modal-backdrop" id="reclamacionesBackdrop" onclick="closeReclamaciones(event)">
+    <div class="modal-box rec-modal-box">
+        <div class="modal-top rec-modal-top">
+            <div>
+                <div class="rec-header-badge">LIBRO DE RECLAMACIONES</div>
+                <h3>Registro de Reclamo o Queja</h3>
+                <p>Conforme al Código de Protección y Defensa del Consumidor — Ley N° 29571</p>
+            </div>
+            <button class="modal-x" onclick="closeReclamaciones()">✕</button>
+        </div>
+        <div class="modal-body">
+            <form id="reclamacionesForm" onsubmit="handleReclamaciones(event)" novalidate>
+
+                <!-- Proveedor -->
+                <div class="rec-section">
+                    <div class="rec-section-title">1. Identificación del Proveedor</div>
+                    <div class="rec-proveedor-info">
+                        <span><strong>Razón social:</strong> KARIM — Jabones Artesanales</span>
+                        <span><strong>Dirección:</strong> Lima, Perú</span>
+                    </div>
+                </div>
+
+                <!-- Consumidor -->
+                <div class="rec-section">
+                    <div class="rec-section-title">2. Identificación del Consumidor</div>
+                    <div class="fg-row">
+                        <div class="fg">
+                            <label>Nombre completo <span class="req">*</span></label>
+                            <input type="text" id="recNombre" required placeholder="Tu nombre completo">
+                        </div>
+                        <div class="fg">
+                            <label>DNI / Carnet de Extranjería <span class="req">*</span></label>
+                            <input type="text" id="recDni" required placeholder="12345678" maxlength="12">
+                        </div>
+                    </div>
+                    <div class="fg-row">
+                        <div class="fg">
+                            <label>Correo electrónico <span class="req">*</span></label>
+                            <input type="email" id="recEmail" required placeholder="tucorreo@email.com">
+                        </div>
+                        <div class="fg">
+                            <label>Teléfono <span class="req">*</span></label>
+                            <input type="tel" id="recTelefono" required placeholder="+51 999 999 999">
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label>Dirección <span class="req">*</span></label>
+                        <input type="text" id="recDireccion" required placeholder="Av. Ejemplo 123, Lima">
+                    </div>
+                </div>
+
+                <!-- Bien contratado -->
+                <div class="rec-section">
+                    <div class="rec-section-title">3. Identificación del Bien Contratado</div>
+                    <div class="rec-radio-group">
+                        <label class="rec-radio-label">
+                            <input type="radio" name="recTipoBien" value="Producto" checked> Producto
+                        </label>
+                        <label class="rec-radio-label">
+                            <input type="radio" name="recTipoBien" value="Servicio"> Servicio
+                        </label>
+                    </div>
+                    <div class="fg-row" style="margin-top:0.8rem;">
+                        <div class="fg">
+                            <label>Producto o servicio reclamado <span class="req">*</span></label>
+                            <select id="recProducto" required>
+                                <option value="">— Selecciona —</option>
+                                <option>Jabón de Colágeno</option>
+                                <option>Jabón de Cacao</option>
+                                <option>Jabón de Cúrcuma</option>
+                                <option>Jabón de Aloe Vera</option>
+                                <option>Jabón de Avena y Miel</option>
+                                <option>Jabón de Arroz</option>
+                                <option>Jabón de Coco</option>
+                                <option>Jabón de Manzanilla</option>
+                                <option>Jabón de Café</option>
+                                <option>Otro / Servicio de entrega</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>Monto reclamado (S/)</label>
+                            <input type="number" id="recMonto" placeholder="0.00" min="0" step="0.01">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipo de reclamación -->
+                <div class="rec-section">
+                    <div class="rec-section-title">4. Tipo de Reclamación</div>
+                    <div class="rec-tipo-cards">
+                        <label class="rec-tipo-card">
+                            <input type="radio" name="recTipo" value="Reclamo" checked>
+                            <div class="rec-tipo-body">
+                                <strong>Reclamo</strong>
+                                <span>Disconformidad con el producto o servicio adquirido que genera un perjuicio económico.</span>
+                            </div>
+                        </label>
+                        <label class="rec-tipo-card">
+                            <input type="radio" name="recTipo" value="Queja">
+                            <div class="rec-tipo-body">
+                                <strong>Queja</strong>
+                                <span>Malestar o desconformidad no relacionado directamente al bien o servicio.</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Descripción -->
+                <div class="rec-section">
+                    <div class="rec-section-title">5. Detalle</div>
+                    <div class="fg">
+                        <label>Descripción del reclamo o queja <span class="req">*</span></label>
+                        <textarea id="recDescripcion" required placeholder="Describe con detalle lo ocurrido..." rows="4"></textarea>
+                    </div>
+                    <div class="fg" style="margin-top:0.8rem;">
+                        <label>Pedido del consumidor <span class="req">*</span></label>
+                        <textarea id="recPedido" required placeholder="¿Qué solución solicitas? (devolución, cambio, información, etc.)" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="rec-legal-note">
+                    La empresa dará respuesta a tu reclamo en un plazo máximo de <strong>30 días calendario</strong> conforme a la Ley N° 29571. Recibirás un código de seguimiento en tu correo.
+                </div>
+
+                <button type="submit" class="btn-submit rec-submit-btn" id="recSubmitBtn">
+                    Enviar Reclamo o Queja
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- ═══ WHATSAPP ═══ -->
 <div class="wa-wrap">
