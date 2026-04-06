@@ -80,7 +80,7 @@
 3. **Información** detallada de ingredientes
 4. **Planes** de tratamiento (1, 3, 6+ meses)
 5. **Proceso** de pedido paso a paso
-6. **Garantía** y devoluciones
+6. **** y devoluciones
 7. **FAQ** expandido
 8. **Testimonios** verificados
 
@@ -339,7 +339,7 @@ R: No para landing (HTML/CSS/JS ya está). Sí para integraciones.
 R: Week 2-3 típicamente con tráfico inicial.
 
 **P: ¿Cómo me diferencio de competencia?**
-R: Educación + Confianza + Garantía. No es precio, es valor.
+R: Educación + Confianza + . No es precio, es valor.
 
 **P: ¿Qué si no tengo inventario?**
 R: Puedes usar dropshipping o made-to-order (más lento pero funciona).

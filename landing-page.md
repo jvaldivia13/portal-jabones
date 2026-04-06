@@ -1129,7 +1129,7 @@ Esta es una landing page profesional para un portal de venta de jabones artesana
                     <li>Proceso de elaboración artesanal</li>
                     <li>Empaques eco-amigables</li>
                     <li>Envíos rápidos y seguros</li>
-                    <li>Garantía de satisfacción</li>
+                    <li> de satisfacción</li>
                 </ul>
                 <a href="#productos" class="btn-primary">Comprar Ahora</a>
             </div>
@@ -1289,7 +1289,7 @@ Esta es una landing page profesional para un portal de venta de jabones artesana
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Sí. Ofrecemos garantía de satisfacción de 30 días. Si no estás satisfecho con tu compra, puedes devolver el producto y te reembolsaremos el 100%. Tu satisfacción es nuestra prioridad.</p>
+                    <p>Sí. Ofrecemos  de 30 días. Si no estás satisfecho con tu compra, puedes devolver el producto y te reembolsaremos el 100%. Tu satisfacción es nuestra prioridad.</p>
                 </div>
             </div>
 

@@ -136,7 +136,6 @@ Asunto: "Tu descuento expira mañana"
 Contenido:
 - Urgencia (24-48 horas)
 - Top 3 productos más vendidos
-- Garantía de 1 año
 - CTA directo a carrito
 ```
 
@@ -166,7 +165,7 @@ Contenido:
 - Más educación
 - Ofertas más agresivas
 - Testimonios
-- Garantía de satisfacción
+-  de satisfacción
 
 **Segment 2: Primera Compra**
 - Instrucciones de uso
@@ -398,7 +397,6 @@ Contenido:
 → Sí, 100% certificado. Aquí están nuestros certificados. Ver documento.
 
 **"¿Realmente funciona?"**
-→ Garantía 1 año sin preguntas. Pero 95% de clientes nuevos compran de nuevo.
 
 **"¿Por qué es más caro?"**
 → Dura 2-3x más y tiene 0 químicos dañinos. Costo real es menor.

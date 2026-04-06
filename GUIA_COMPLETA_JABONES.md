@@ -275,9 +275,8 @@ Estos jabones atacan signos de envejecimiento:
 
 **Envío Gratis** en compras mayores a $50
 
-### ✅ Garantía de Satisfacción
+### ✅  de Satisfacción
 
-- Garantía de 1 año
 - Devolución sin preguntas
 - Reembolso 100%
 - Cambio por otro producto

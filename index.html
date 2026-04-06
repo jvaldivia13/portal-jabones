@@ -56,9 +56,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button class="btn-ghost" onclick="document.getElementById('nosotros').scrollIntoView({behavior:'smooth'})">Nuestra Historia</button>
         </div>
         <div class="hero-stats">
-            <div><span class="stat-number">5</span><span class="stat-label">Variedades</span></div>
+            <div><span class="stat-number">9</span><span class="stat-label">Variedades</span></div>
             <div><span class="stat-number">100%</span><span class="stat-label">Natural</span></div>
-            <div><span class="stat-number">1</span><span class="stat-label">Año garantía</span></div>
+            <div><span class="stat-number">6</span><span class="stat-label">Meses caducidad</span></div>
         </div>
     </div>
     <div class="hero-right">
@@ -98,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="strip-inner">
         <div class="strip-item"><div class="strip-icon">🌿</div><div class="strip-text"><strong>100% Natural</strong><span>Sin químicos artificiales</span></div></div>
         <div class="strip-item"><div class="strip-icon">🚚</div><div class="strip-text"><strong>Envío Nacional</strong><span>Lima en 2-3 días hábiles</span></div></div>
-        <div class="strip-item"><div class="strip-icon">🔒</div><div class="strip-text"><strong>Garantía 1 año</strong><span>Caducidad: 6 meses</span></div></div>
+        <div class="strip-item"><div class="strip-icon">⏳</div><div class="strip-text"><strong>Calidad fresca</strong><span>Caducidad: 6 meses</span></div></div>
         <div class="strip-item"><div class="strip-icon">✦</div><div class="strip-text"><strong>Artesanal</strong><span>Elaborado a mano en Lima</span></div></div>
     </div>
 </div>
@@ -143,7 +143,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Glicerina natural como base hidratante</li>
             <li>Aceite de Rosa Mosqueta y Vitamina E en cada fórmula</li>
             <li>Producción artesanal en pequeños lotes</li>
-            <li>Garantía de satisfacción de 1 año</li>
             <li>Vida útil / Caducidad del jabón: 6 meses</li>
         </ul>
         <button class="btn-dark" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Contáctanos</button>
@@ -191,25 +190,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="contact-light">
         <h3>Envíanos un mensaje</h3>
-        <form onsubmit="handleContact(event)">
+        <form onsubmit="handleContact(event)" id="contactForm">
             <div class="fg-row">
-                <div class="fg"><label>Nombre</label><input type="text" required></div>
-                <div class="fg"><label>Teléfono</label><input type="tel" placeholder="+51 999 999 999"></div>
+                <div class="fg"><label>Nombre</label><input type="text" id="contactName" required></div>
+                <div class="fg"><label>Teléfono</label><input type="tel" id="contactPhone" placeholder="+51 999 999 999"></div>
             </div>
-            <div class="fg"><label>Correo electrónico</label><input type="email" required></div>
-            <div class="fg">
-                <label>Producto de interés</label>
-                <select>
-                    <option value="">Selecciona un producto</option>
-                    <option>Jabón Cicatrizante con Aloe Vera</option>
-                    <option>Jabón de Coco</option>
-                    <option>Jabón de Arroz</option>
-                    <option>Jabón de Avena y Miel</option>
-                    <option>Jabón de Café Expediente</option>
-                    <option>Consulta general</option>
-                </select>
-            </div>
-            <div class="fg"><label>Mensaje</label><textarea placeholder="Cuéntanos cómo podemos ayudarte..."></textarea></div>
+            <div class="fg"><label>Correo electrónico</label><input type="email" id="contactEmail" required></div>
+            <div class="fg"><label>Mensaje</label><textarea id="contactMessage" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea></div>
             <div class="fg"><button type="submit" class="btn-submit">Enviar Mensaje</button></div>
         </form>
     </div>

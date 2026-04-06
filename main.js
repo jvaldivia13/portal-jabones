@@ -1,43 +1,75 @@
 const PRODUCTS = [
-    { id:1, name:'Jabón Cicatrizante con Aloe Vera', category:'Acne & Cicatrización', tag:'Popular', price:25, weight:100,
-      desc:'Fórmula cicatrizante con Aloe Vera puro para tratar el acne activo y reducir marcas de forma natural.',
-      longDesc:'Especialmente formulado para pieles acneicas. El Aloe Vera puro actúa como antiinflamatorio natural mientras la Manzanilla calma la piel irritada. La Vitamina E acelera la regeneración celular.',
-      ingredients:['Glicerina blanca y transparente','Esencia de Aloe Vera','Manzanilla','Aloe Vera gel','Vitamina E','Tinte Natural Verde'],
-      benefits:['Reduce acne activo','Cicatriza marcas','Antiinflamatorio natural','Regenera la piel','Calma irritaciones'],
-      skinType:'Acneica y grasa', usage:'Aplicar 2 veces al día en zonas afectadas con masajes suaves',
-      image:'imagenes/WhatsApp Image 2026-04-05 at 5.01.19 PM (1).jpeg' },
+    { id:1, name:'Jabón de Colágeno', category:'Anti-Envejecimiento', tag:null, price:25, weight:100,
+      desc:'Rejuvenece tu piel mejorando su elasticidad y firmeza natural con colágeno hidrolizado.',
+      longDesc:'Fórmula enriquecida con colágeno que previene la flacidez y atenúa líneas de expresión. Ayuda a mantener la piel hidratada, suave y con un aspecto rejuvenecido gracias a la vitamina E.',
+      ingredients:['Glicerina blanca','Colágeno hidrolizado','Vitamina E','Aceite de almendras'],
+      benefits:['Mejora la elasticidad','Rejuvenece el cutis','Atenúa líneas finas','Hidratación profunda'],
+      skinType:'Madura y seca', usage:'Usar en la rutina diaria, de día o de noche.',
+      image:'catalogo/1-colágeno.jpeg' },
 
-    { id:2, name:'Jabón de Coco', category:'Hidratación Profunda', tag:'Nuevo', price:25, weight:100,
-      desc:'Hidratación intensa con coco molido, aceite de coco y Rosa Mosqueta para una piel suave y nutritiva.',
-      longDesc:'El coco molido exfolia suavemente mientras el aceite de coco nutre en profundidad. El Aceite de Rosa Mosqueta regenera y la Vitamina E protege. Ideal para pieles secas y normales.',
-      ingredients:['Glicerina Blanca','Coco Molido','Aceite de Coco','Aceite de Rosa Mosqueta','Vitamina E'],
-      benefits:['Hidratación profunda','Exfoliación suave','Piel más suave','Nutre en profundidad','Aroma tropical'],
-      skinType:'Seca y normal', usage:'Usar diariamente con masajes circulares suaves',
-      image:'imagenes/WhatsApp Image 2026-04-05 at 5.01.19 PM (2).jpeg' },
+    { id:2, name:'Jabón de Cacao', category:'Ultra Nutrición', tag:null, price:25, weight:100,
+      desc:'Humecta y nutre todo el cuerpo con las propiedades antioxidantes del cacao puro.',
+      longDesc:'El cacao puro es rico en antioxidantes naturales que combaten el daño de radicales libres. Nutre intensamente y ofrece un aroma relajante ideal para el cuerpo entero.',
+      ingredients:['Glicerina vegetal','Cacao puro en polvo','Manteca de Cacao','Aceite de Coco'],
+      benefits:['Nutrición intensa','Efecto antioxidante','Aroma relajante','Suaviza la piel'],
+      skinType:'Seca a normal', usage:'Ideal para usar en la ducha corporal completa.',
+      image:'catalogo/2-cacao.jpeg' },
 
-    { id:3, name:'Jabón de Arroz', category:'Aclaramiento & Luminosidad', tag:null, price:25, weight:100,
-      desc:'Aclaramiento progresivo con arroz molido y leche en polvo para un cutis luminoso y uniforme.',
-      longDesc:'El arroz molido exfolia y aclara el tono de piel progresivamente. La Leche en Polvo suaviza e ilumina, mientras el Aceite de Rosa Mosqueta trabaja sobre manchas y marcas existentes.',
-      ingredients:['Glicerina blanca','Arroz Molido','Vitamina E','Maizena','Aceite de Rosa Mosqueta','Esencia natural','Leche en Polvo'],
-      benefits:['Aclaramiento progresivo','Exfoliación suave','Piel luminosa','Iguala el tono','Reduce manchas'],
-      skinType:'Todo tipo de piel', usage:'Usar 2-3 veces por semana, especialmente en zonas oscurecidas',
-      image:'imagenes/WhatsApp Image 2026-04-05 at 5.01.20 PM (1).jpeg' },
+    { id:3, name:'Jabón de Cúrcuma', category:'Aclaramiento & Control', tag:null, price:25, weight:100,
+      desc:'Limpia profundamente y ayuda a reducir manchas del rostro y mejorar la luminosidad.',
+      longDesc:'La cúrcuma posee poderosos efectos antiinflamatorios y aclarantes. Ayuda a combatir manchas oscuras y brotes de acné, unificando el tono para un cutis radiante.',
+      ingredients:['Glicerina blanca','Cúrcuma orgánica','Aceite de Rosa Mosqueta','Vitamina E'],
+      benefits:['Reduce manchas oscuras','Unifica el tono','Antiinflamatorio natural','Aporta luminosidad'],
+      skinType:'Todo tipo de piel', usage:'Usar 2-3 veces por semana en el rostro con masajes circulares.',
+      image:'catalogo/3-cúrcuma.jpeg' },
 
-    { id:4, name:'Jabón de Avena y Miel', category:'Nutrición & Protección', tag:'Sensible', price:25, weight:100,
-      desc:'Calmante y nutritivo con avena, miel y manteca de Karité. Ideal para pieles sensibles e irritadas.',
-      longDesc:'La Avena Molida calma la piel irritada mientras la Miel aporta propiedades antibacterianas naturales. La Manteca de Karité nutre profundamente. Ideal para eczema y dermatitis.',
-      ingredients:['Glicerina blanca','Avena Molida','Miel','Vitamina E','Manteca de Karité','Aceite de esencia natural'],
-      benefits:['Calma irritaciones','Hidratación intensa','Ideal para eczema','Propiedades antibacterianas','Suavidad extrema'],
-      skinType:'Sensible e irritada', usage:'Usar suavemente 2 veces al día. Enjuagar con agua tibia.',
-      image:'imagenes/WhatsApp Image 2026-04-05 at 5.01.20 PM (3).jpeg' },
+    { id:4, name:'Jabón de Aloe Vera', category:'Acne & Cicatrización', tag:null, price:25, weight:100,
+      desc:'Fórmula cicatrizante con Aloe Vera puro para tratar acné y reducir molestias cutáneas.',
+      longDesc:'El Aloe Vera actúa como un desinfectante y antiinflamatorio natural súper eficaz. Ideal para calmar quemaduras leves, brotes de acné activo y refrescar la piel.',
+      ingredients:['Glicerina transparente','Aloe Vera gel','Manzanilla','Vitamina E'],
+      benefits:['Calma acné activo','Cicatriza marcas','Refresca la piel','Antiinflamatorio'],
+      skinType:'Acneica y grasa', usage:'Usar diariamente en zonas afectadas por brotes.',
+      image:'catalogo/4- Aloe Vera.jpeg' },
 
-    { id:5, name:'Jabón de Café Expediente', category:'Energía & Revitalización', tag:null, price:25, weight:100,
-      desc:'Exfoliante energizante con café molido y cera de abeja para revitalizar y activar la circulación.',
-      longDesc:'El café molido activa la circulación y realiza una exfoliación profunda. La Cera de Abeja crea una barrera protectora natural y el Aceite de Coco hidrata tras cada uso.',
-      ingredients:['Glicerina blanca o transparente','Cera de abeja','Café Molido','Aceite de Coco','Esencia natural'],
-      benefits:['Activa la circulación','Exfoliación profunda','Revitaliza la piel','Reduce retención de líquidos','Energiza el cutis'],
-      skinType:'Todo tipo de piel', usage:'Usar por las mañanas con masajes circulares. Ideal en ducha.',
-      image:'imagenes/WhatsApp Image 2026-04-05 at 5.01.20 PM (5).jpeg' }
+    { id:5, name:'Jabón de Avena y Miel', category:'Suavidad & Alivio', tag:null, price:25, weight:100,
+      desc:'Humectante natural que ayuda a suavizar y nutrir pieles sensibles y delicadas.',
+      longDesc:'La combinación perfecta para piel irritada. La miel aporta propiedades antibacterianas y la avena funciona como exfoliante ultra suave que retiene la humedad natural.',
+      ingredients:['Glicerina blanca','Avena Molida','Miel pura','Manteca de Karité'],
+      benefits:['Humectación profunda','Nutrición intensa','Calma irritaciones','Suaviza la piel'],
+      skinType:'Sensible y delicada', usage:'Masajear suavemente la piel y enjuagar con agua tibia.',
+      image:'catalogo/5- Avena y miel.jpeg' },
+
+    { id:6, name:'Jabón de Arroz', category:'Unificador de Tono', tag:null, price:25, weight:100,
+      desc:'Aclarante natural que unifica y nutre la piel, dejándola como porcelana.',
+      longDesc:'Inspirado en antiguos secretos de belleza asiáticos. El arroz molido exfolia delicadamente, fomenta la renovación celular e ilumina el rostro progresivamente.',
+      ingredients:['Glicerina blanca','Arroz molido','Leche en polvo','Esencia natural'],
+      benefits:['Aclarante progresivo','Unifica el tono','Aspecto mate y suave','Renueva células'],
+      skinType:'Mixta a grasa', usage:'Usar diariamente o intercalado para mantener el tono claro.',
+      image:'catalogo/6 - Arroz.jpeg' },
+
+    { id:7, name:'Jabón de Coco', category:'Hidratación Diaria', tag:null, price:25, weight:100,
+      desc:'Poderoso humectante que atrapa la humedad para dejar el rostro y cuerpo suaves.',
+      longDesc:'El aceite de coco penetra profundamente en los poros. Ayuda a restaurar la barrera protectora de la piel secas o agrietadas, dejando un suave y exótico aroma tropical.',
+      ingredients:['Glicerina blanca','Aceite de Coco Virgen','Coco molido','Vitamina E'],
+      benefits:['Atrapa la humedad','Previene resequedad','Repara grietas','Aroma exótico'],
+      skinType:'Seca y extra seca', usage:'Ideal para ducha diaria en áreas resecas como codos y rodillas.',
+      image:'catalogo/7- Coco.jpeg' },
+
+    { id:8, name:'Jabón de Manzanilla', category:'Calmante Natural', tag:null, price:25, weight:100,
+      desc:'Desinflama y relaja la piel irritada. Perfecto para pieles que necesitan un descanso.',
+      longDesc:'La flor de manzanilla es famosa por sus poderes sedantes y analgésicos naturales. Calma el enrojecimiento, reduce la hinchazón y ofrece una limpieza tan amorosa que parece un abrazo.',
+      ingredients:['Glicerina transparente','Extracto botánico de Manzanilla','Aceite de caléndula'],
+      benefits:['Desinflama rojeces','Limpia delicadamente','Humecta','Relaja tensiones'],
+      skinType:'Sensible y atópica', usage:'Lavado facial nocturno para calmar la piel antes de dormir.',
+      image:'catalogo/8 - Manzanilla.jpeg' },
+
+    { id:9, name:'Jabón de Café', category:'Energía & Revitalización', tag:null, price:25, weight:100,
+      desc:'Exfoliante vigorizante que remueve células muertas y activa tu circulación.',
+      longDesc:'El café molido realiza una exfoliación mecánica efectiva, estimulando el flujo sanguíneo y ayudando a combatir la retención de líquidos (ideal contra la celulitis).',
+      ingredients:['Glicerina blanca','Café puro tostado molido','Aceite de Coco','Esencia de vainilla'],
+      benefits:['Exfoliación profunda','Estimula circulación','Suaviza textura gruesa','Energiza'],
+      skinType:'Normal a resistente', usage:'Frotar directamente sobre el cuerpo en la ducha (evitar rostro sensible).',
+      image:'catalogo/9- Café.jpeg' }
 ];
 
 const TESTIMONIALS = [
@@ -54,7 +86,7 @@ const FAQS = [
     { q:'¿Cuánto dura un jabón de 100 gramos?', a:'Con uso regular (2 veces al día) dura aproximadamente 30 días. Al ser concentrado, rinde más que los jabones comerciales. Con jabonera drenante puede durar hasta 40 días.' },
     { q:'¿Puedo usarlo si tengo piel muy sensible?', a:'Sí. El Jabón de Avena y Miel está especialmente formulado para pieles sensibles, con eczema o dermatitis. Recomendamos probar en una pequeña zona antes del primer uso completo.' },
     { q:'¿Cuándo veré resultados?', a:'Los primeros resultados visibles suelen aparecer entre 5 y 10 días. Los cambios más significativos, como reducción de acne o aclaramiento, se aprecian tras 3-4 semanas de uso consistente.' },
-    { q:'¿Ofrecen garantía y cuál es la caducidad?', a:'Sí. Ofrecemos garantía completa de 1 año. Si no estás satisfecho con tu compra, te devolvemos el dinero sin preguntas. Ten en cuenta que nuestros jabones naturales tienen una caducidad óptima de 6 meses tras su elaboración.' },
+    { q:'¿Cuál es la caducidad de los jabones?', a:'Al estar elaborados artesanalmente sin conservantes agresivos, nuestros jabones tienen una caducidad óptima de 6 meses tras su formulación.' },
     { q:'¿Cómo debo conservar el jabón?', a:'Guarda el jabón en un lugar seco, alejado del agua acumulada. Usa una jabonera con drenaje entre usos. Esto maximiza la durabilidad y evita que se ablande.' },
     { q:'¿Hacen envíos a todo el Perú?', a:'Sí. Lima y Callao en 2-3 días hábiles; provincias en 5-7 días hábiles. Los pedidos se procesan dentro de las 24 horas de confirmado el pago.' },
     { q:'¿Tienen descuentos por compra en cantidad?', a:'Sí. Escríbenos por WhatsApp al +51 953 908 876 para consultar nuestros packs especiales y descuentos por volumen.' }
@@ -191,14 +223,48 @@ function toggleCart() {
 
 function handleCheckout() {
     if (!cart.length) { showToast('Tu carrito está vacío'); return; }
+    
     const total = cart.reduce((s, x) => s + x.price * x.qty, 0);
-    alert(`¡Gracias por tu pedido!\n\nTotal: S/ ${total.toFixed(2)}\n\nTe contactaremos por WhatsApp al +51 953 908 876 para confirmar y coordinar el pago.`);
-    cart = []; updateCart(); toggleCart();
+    
+    let text = `Hola KARIM, me gustaría realizar un pedido:\n\n`;
+    cart.forEach(item => {
+        text += `🔹 ${item.qty}x ${item.name} (S/ ${(item.price * item.qty).toFixed(2)})\n`;
+    });
+    text += `\n*TOTAL: S/ ${total.toFixed(2)}*\n\nPor favor, indíquenme los métodos de pago y opciones de envío.`;
+    
+    const waPhone = "51953908876";
+    const waUrl = `https://wa.me/${waPhone}?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, '_blank');
+
+    cart = []; 
+    updateCart(); 
+    toggleCart();
 }
 
 function handleContact(e) {
     e.preventDefault();
-    showToast('¡Mensaje enviado! Te contactaremos pronto.');
+    
+    const name = document.getElementById('contactName').value.trim();
+    const phone = document.getElementById('contactPhone').value.trim() || 'No especificado';
+    const email = document.getElementById('contactEmail').value.trim();
+    const message = document.getElementById('contactMessage').value.trim();
+    
+    const checkboxes = document.querySelectorAll('input[name="productos"]:checked');
+    const selectedProducts = Array.from(checkboxes).map(cb => cb.value);
+    const productsString = selectedProducts.length > 0 ? selectedProducts.join(', ') : 'Ningún producto específico';
+    
+    let text = `Hola KARIM, me gustaría hacer una consulta desde la web:\n\n`;
+    text += `*Nombre:* ${name}\n`;
+    if(phone !== 'No especificado') text += `*Teléfono:* ${phone}\n`;
+    text += `*Correo:* ${email}\n`;
+    text += `*Me interesan:* ${productsString}\n`;
+    if (message) text += `\n*Mensaje:*\n${message}`;
+    
+    const waPhone = "51953908876";
+    const waUrl = `https://wa.me/${waPhone}?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, '_blank');
+    
+    showToast('Redirigiendo a WhatsApp...');
     e.target.reset();
 }
 
