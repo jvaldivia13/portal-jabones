@@ -753,6 +753,13 @@
         .fg textarea { resize:vertical; min-height:100px; }
         .fg-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
 
+        .product-checks { display:grid; grid-template-columns:1fr 1fr; gap:0.4rem 1rem; padding:0.8rem 1rem; border:1px solid rgba(78,60,49,0.15); background:var(--white); }
+        .check-item { display:flex; align-items:center; gap:0.5rem; cursor:pointer; padding:0.35rem 0; }
+        .check-item input[type="checkbox"] { accent-color:var(--dark); width:14px; height:14px; flex-shrink:0; }
+        .check-item span { font-size:0.83rem; color:var(--text); }
+        .check-item--varios { grid-column:1 / -1; border-top:1px solid rgba(78,60,49,0.1); margin-top:0.3rem; padding-top:0.6rem; }
+        .check-item--varios span { font-weight:600; }
+
         .btn-submit {
             width: 100%;
             background: var(--dark);
