@@ -333,7 +333,7 @@ Para dudas sobre:
 
 Un **sistema completo de captación de clientes** que funciona 24/7, educando a potenciales clientes sobre los beneficios de jabones artesanales naturales, construyendo confianza a través de contenido de valor y facilitando que tomen decisiones informadas sobre sus compras.
 
-**No es venta agresiva, es educación + valor + confianza = Conversión natural.**
+**No es venta agresiva, es educación + valor + confianza = Conversión natural.**.
 
 ---
 
