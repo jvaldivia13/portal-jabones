@@ -73,12 +73,12 @@ const PRODUCTS = [
 ];
 
 const TESTIMONIALS = [
-    { name:'María García', initial:'M', product:'Jabón Cicatrizante', stars:5, text:'En dos semanas noté una reducción enorme en mis puntos negros. Ya no necesito maquillaje pesado para salir.', result:'80% menos acne' },
-    { name:'Carmen López', initial:'C', product:'Jabón de Avena y Miel', stars:5, text:'Tenía dermatitis crónica y este fue lo único que funcionó sin causarme reacciones alérgicas. Lo recomiendo.', result:'Dermatitis controlada' },
-    { name:'Rosa Mendez', initial:'R', product:'Jabón de Arroz', stars:5, text:'Mis manchas están desapareciendo poco a poco. Vale cada sol invertido. Ya pedí mi tercer jabón.', result:'60% menos manchas' },
-    { name:'Patricia Torres', initial:'P', product:'Jabón de Coco', stars:5, text:'Mi piel se siente increíblemente suave desde el primer uso. El aroma es relajante y la diferencia es notable.', result:'Piel notablemente hidratada' },
-    { name:'Jesús Ruiz', initial:'J', product:'Jabón de Café', stars:5, text:'Como hombre aprecio que sea natural. La energía en la piel es real. Lo uso cada mañana antes de trabajar.', result:'Piel revitalizada' },
-    { name:'Sofía Araya', initial:'S', product:'Jabón Cicatrizante', stars:5, text:'Finalmente puedo mirarme al espejo sin sentir inseguridad por las cicatrices del acne. Gracias KARIM.', result:'Cicatrices casi invisibles' }
+    { name:'Luciana Ríos', initial:'L', product:'Jabón de Aloe Vera', stars:5, text:'Llevaba meses lidiando con brotes de acné y nada funcionaba. A la tercera semana con este jabón los granitos activos bajaron muchísimo. No pica, no reseca. Ahora es parte fija de mi rutina.', result:'Brotes reducidos en 3 semanas' },
+    { name:'Carmen López', initial:'C', product:'Jabón de Avena y Miel', stars:5, text:'Tengo piel muy sensible y la mayoría de jabones me dejan enrojecida. Este es suavísimo, huele increíble y no me causó ninguna reacción. Mi hija de 8 años también lo usa ya.', result:'Sin irritaciones desde el primer uso' },
+    { name:'Rosa Mendez', initial:'R', product:'Jabón de Arroz', stars:5, text:'Tenía una mancha oscura en el pómulo que me molestaba hace tiempo. Después de usarlo todos los días durante un mes, está mucho más clara. No esperaba resultados tan notorios siendo un jabón.', result:'Mancha visiblemente aclarada' },
+    { name:'Patricia Torres', initial:'P', product:'Jabón de Coco', stars:5, text:'Mis codos y rodillas siempre estuvieron resecos sin importar cuánta crema me pusiera. Con este jabón en la ducha diaria la textura cambió por completo. Piel suave y sin esa sensación áspera.', result:'Resequedad extrema controlada' },
+    { name:'Marco Villanueva', initial:'M', product:'Jabón de Café', stars:4, text:'Lo compré curioso porque nunca había usado un jabón exfoliante de verdad. El resultado en la ducha es inmediato: la piel queda limpia y más firme. Lo uso tres veces por semana en piernas y espalda.', result:'Textura de piel mejorada' },
+    { name:'Sofía Araya', initial:'S', product:'Jabón de Cúrcuma', stars:5, text:'Mi tono era muy disparejo, con manchitas del sol. Empecé a usarlo dos veces por semana como me indicaron y al mes el tono se veía mucho más uniforme. El color amarillo asusta al principio pero no mancha nada.', result:'Tono unificado en 4 semanas' }
 ];
 
 const FAQS = [
