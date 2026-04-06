@@ -54,7 +54,7 @@ const FAQS = [
     { q:'¿Cuánto dura un jabón de 100 gramos?', a:'Con uso regular (2 veces al día) dura aproximadamente 30 días. Al ser concentrado, rinde más que los jabones comerciales. Con jabonera drenante puede durar hasta 40 días.' },
     { q:'¿Puedo usarlo si tengo piel muy sensible?', a:'Sí. El Jabón de Avena y Miel está especialmente formulado para pieles sensibles, con eczema o dermatitis. Recomendamos probar en una pequeña zona antes del primer uso completo.' },
     { q:'¿Cuándo veré resultados?', a:'Los primeros resultados visibles suelen aparecer entre 5 y 10 días. Los cambios más significativos, como reducción de acne o aclaramiento, se aprecian tras 3-4 semanas de uso consistente.' },
-    { q:'¿Ofrecen garantía de satisfacción?', a:'Sí. Ofrecemos garantía completa de 30 días. Si no estás satisfecho con tu compra por cualquier motivo, te devolvemos el dinero sin preguntas.' },
+    { q:'¿Ofrecen garantía y cuál es la caducidad?', a:'Sí. Ofrecemos garantía completa de 1 año. Si no estás satisfecho con tu compra, te devolvemos el dinero sin preguntas. Ten en cuenta que nuestros jabones naturales tienen una caducidad óptima de 6 meses tras su elaboración.' },
     { q:'¿Cómo debo conservar el jabón?', a:'Guarda el jabón en un lugar seco, alejado del agua acumulada. Usa una jabonera con drenaje entre usos. Esto maximiza la durabilidad y evita que se ablande.' },
     { q:'¿Hacen envíos a todo el Perú?', a:'Sí. Lima y Callao en 2-3 días hábiles; provincias en 5-7 días hábiles. Los pedidos se procesan dentro de las 24 horas de confirmado el pago.' },
     { q:'¿Tienen descuentos por compra en cantidad?', a:'Sí. Escríbenos por WhatsApp al +51 953 908 876 para consultar nuestros packs especiales y descuentos por volumen.' }

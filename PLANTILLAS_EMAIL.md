@@ -262,7 +262,7 @@ R: 100% certificado orgánico. Cero químicos sintéticos,
 cero parabenos, cero sulfatos.
 
 P: "¿Realmente funciona?"
-R: Garantía 30 días sin preguntas. Pero 96% de clientes 
+R: Garantía 1 año sin preguntas. Pero 96% de clientes 
 nuevos compran de nuevo.
 
 P: "¿Cuánto dura?"
@@ -281,7 +281,7 @@ P: "¿Cuánto tiempo espero resultados?"
 R: Hidratación: 3-5 días. Acné: 2-3 semanas. Anti-edad: 4-6 semanas.
 
 P: "¿Puedo devolver si no me gusta?"
-R: Sí. 30 días de garantía. Devolución completa, sin preguntas.
+R: Sí. garantía de 1 año. Devolución completa, sin preguntas.
 
 ---
 
@@ -290,7 +290,7 @@ OK, ÚLTIMA OPORTUNIDAD:
 🎁 15% OFF CON CÓDIGO: BIENVENIDA15
 ⏰ VÁLIDO HASTA HOY A LAS 23:59
 ✓ ENVÍO GRATIS EN ÓRDENES $50+
-✓ GARANTÍA 30 DÍAS
+✓ GARANTÍA 1 AÑO
 ✓ DEVOLUCIÓN SIN PREGUNTAS
 
 COMPRAR AHORA → 
@@ -364,7 +364,7 @@ P: "¿Qué hago cuando llega?"
 R: Te enviaremos email con instrucciones exactas + vídeo tutorial
 
 P: "¿Se puede devolver después?"
-R: Sí. Tienes 30 días de garantía. Devuelve sin preguntas.
+R: Sí. Tienes garantía de 1 año. Devuelve sin preguntas.
 
 ---
 

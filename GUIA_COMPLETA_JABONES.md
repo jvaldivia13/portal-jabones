@@ -277,7 +277,7 @@ Estos jabones atacan signos de envejecimiento:
 
 ### ✅ Garantía de Satisfacción
 
-- Garantía de 30 días
+- Garantía de 1 año
 - Devolución sin preguntas
 - Reembolso 100%
 - Cambio por otro producto
