@@ -1,10 +1,3 @@
-/* ─── EMAILJS CONFIG ──────────────────────────────────────────────────────
-   1. Crea cuenta en https://www.emailjs.com (plan Free: 200 emails/mes)
-   2. En Email Services → Add New Service → Gmail (o el que uses)
-   3. En Email Templates → Create New Template (ver instrucciones abajo)
-   4. En Account → General → Public Key
-   Reemplaza los tres valores de abajo con los tuyos.
-────────────────────────────────────────────────────────────────────────── */
 const EMAILJS_PUBLIC_KEY  = '-uMsuloJLZxGuY1Eo';
 const EMAILJS_SERVICE_ID  = 'service_qxa8lym';
 const EMAILJS_TEMPLATE_ID = 'template_9grj0xq';
@@ -131,7 +124,7 @@ const BLOG_POSTS = [
                 <li><strong>Duchas de Vapor:</strong> Intenta mantener el jabón fuera de la línea directa de la ducha cuando no lo estés usando. La humedad constante del vapor puede ablandarlo prematuramente.</li>
                 <li><strong>La Espuma es Suficiente:</strong> No necesitas frotar la barra directamente sobre todo el cuerpo. Haz espuma en tus manos y aplícala; esto rinde mucho más y es igual de efectivo para limpiar.</li>
             </ol>
-            <p>Con estos conejos, una barra de 100g puede durar perfectamente entre 30 y 40 días de uso diario.</p>
+            <p>Con estos consejos, una barra de 100g puede durar perfectamente entre 30 y 40 días de uso diario.</p>
         `
     },
     {
