@@ -16,7 +16,7 @@ const PRODUCTS = [
       ingredients:['Gelatina natural','Glicerina transparente','Aceite de rosa mosqueta','Colágeno hidrolizado','Esencia'],
       benefits:['Mejora la elasticidad','Rejuvenece el cutis','Atenúa líneas finas','Hidratación profunda'],
       skinType:'Madura y seca', usage:'Usar en la rutina diaria, de día o de noche.',
-      image:'catalogo/1-colágeno.jpeg' },
+      image:'catalogo/jabon-artesanal-colageno-rejuvenecedor.jpeg' },
 
     { id:2, name:'Jabón de Cacao', category:'Ultra Nutrición', tag:null, price:25, weight:100,
       desc:'Humecta y nutre todo el cuerpo con las propiedades antioxidantes del cacao puro.',
@@ -24,7 +24,7 @@ const PRODUCTS = [
       ingredients:['Glicerina transparente','Cacao molido','Esencia de chocolate','Aceite de almendra','Miel','Vitamina E'],
       benefits:['Nutrición intensa','Efecto antioxidante','Aroma relajante','Suaviza la piel'],
       skinType:'Seca a normal', usage:'Ideal para usar en la ducha corporal completa.',
-      image:'catalogo/2-cacao.jpeg' },
+      image:'catalogo/jabon-natural-cacao-antioxidante.jpeg' },
 
     { id:3, name:'Jabón de Cúrcuma', category:'Aclaramiento & Control', tag:null, price:25, weight:100,
       desc:'Limpia profundamente y ayuda a reducir manchas del rostro y mejorar la luminosidad.',
@@ -32,7 +32,7 @@ const PRODUCTS = [
       ingredients:['Glicerina blanca','Aceite de coco','Vitamina E','Esencia de vainilla'],
       benefits:['Reduce manchas oscuras','Unifica el tono','Antiinflamatorio natural','Aporta luminosidad'],
       skinType:'Todo tipo de piel', usage:'Usar 2-3 veces por semana en el rostro con masajes circulares.',
-      image:'catalogo/3-cúrcuma.jpeg' },
+      image:'catalogo/jabon-curcuma-aclarante-manchas-cara.jpeg' },
 
     { id:4, name:'Jabón de Aloe Vera', category:'Acne & Cicatrización', tag:null, price:25, weight:100,
       desc:'Fórmula cicatrizante con Aloe Vera puro para tratar acné y reducir molestias cutáneas.',
@@ -40,7 +40,7 @@ const PRODUCTS = [
       ingredients:['Glicerina blanca y transparente','Aloe vera gel','Manzanilla','Vitamina E','Esencia de Aloe Vera','Tintura verde'],
       benefits:['Calma acné activo','Cicatriza marcas','Refresca la piel','Antiinflamatorio'],
       skinType:'Acneica y grasa', usage:'Usar diariamente en zonas afectadas por brotes.',
-      image:'catalogo/4- Aloe Vera.jpeg' },
+      image:'catalogo/jabon-aloe-vera-cicatrizante-acne.jpeg' },
 
     { id:5, name:'Jabón de Avena y Miel', category:'Suavidad & Alivio', tag:null, price:25, weight:100,
       desc:'Humectante natural que ayuda a suavizar y nutrir pieles sensibles y delicadas.',
@@ -48,7 +48,7 @@ const PRODUCTS = [
       ingredients:['Glicerina blanca','Avena molida','Miel','Vitamina E','Manteca de karité','Aceite de esencia de la Banda'],
       benefits:['Humectación profunda','Nutrición intensa','Calma irritaciones','Suaviza la piel'],
       skinType:'Sensible y delicada', usage:'Masajear suavemente la piel y enjuagar con agua tibia.',
-      image:'catalogo/5- Avena y miel.jpeg' },
+      image:'catalogo/jabon-avena-miel-piel-sensible.jpeg' },
 
     { id:6, name:'Jabón de Arroz', category:'Unificador de Tono', tag:null, price:25, weight:100,
       desc:'Aclarante natural que unifica y nutre la piel, dejándola como porcelana.',
@@ -56,7 +56,7 @@ const PRODUCTS = [
       ingredients:['Glicerina blanca','Arroz molido','Vitamina E','Maizena','Aceite de rosa mosqueta','Esencia','Leche en polvo'],
       benefits:['Aclarante progresivo','Unifica el tono','Aspecto mate y suave','Renueva células'],
       skinType:'Mixta a grasa', usage:'Usar diariamente o intercalado para mantener el tono claro.',
-      image:'catalogo/6 - Arroz.jpeg' },
+      image:'catalogo/jabon-arroz-aclarante-piel-porcelana.jpeg' },
 
     { id:7, name:'Jabón de Coco', category:'Hidratación Diaria', tag:null, price:25, weight:100,
       desc:'Poderoso humectante que atrapa la humedad para dejar el rostro y cuerpo suaves.',
@@ -64,7 +64,7 @@ const PRODUCTS = [
       ingredients:['Glicerina blanca','Coco molido','Aceite de coco','Aceite de rosa mosqueta','Vitamina E'],
       benefits:['Atrapa la humedad','Previene resequedad','Repara grietas','Aroma exótico'],
       skinType:'Seca y extra seca', usage:'Ideal para ducha diaria en áreas resecas como codos y rodillas.',
-      image:'catalogo/7- Coco.jpeg' },
+      image:'catalogo/jabon-coco-hidratacion-profunda.jpeg' },
 
     { id:8, name:'Jabón de Manzanilla', category:'Calmante Natural', tag:null, price:25, weight:100,
       desc:'Desinflama y relaja la piel irritada. Perfecto para pieles que necesitan un descanso.',
@@ -72,7 +72,7 @@ const PRODUCTS = [
       ingredients:['Glicerina transparente','Manzanilla seca','Vitamina E','Aceite de almendra'],
       benefits:['Desinflama rojeces','Limpia delicadamente','Humecta','Relaja tensiones'],
       skinType:'Sensible y atópica', usage:'Lavado facial nocturno para calmar la piel antes de dormir.',
-      image:'catalogo/8 - Manzanilla.jpeg' },
+      image:'catalogo/jabon-manzanilla-calmante-piel-atopica.jpeg' },
 
     { id:9, name:'Jabón de Café', category:'Energía & Revitalización', tag:null, price:25, weight:100,
       desc:'Exfoliante vigorizante que remueve células muertas y activa tu circulación.',
@@ -80,7 +80,7 @@ const PRODUCTS = [
       ingredients:['Glicerina blanca o transparente','Cera de abeja','Café molido','Aceite de coco','Esencia la Banda'],
       benefits:['Exfoliación profunda','Estimula circulación','Suaviza textura gruesa','Energiza'],
       skinType:'Normal a resistente', usage:'Frotar directamente sobre el cuerpo en la ducha (evitar rostro sensible).',
-      image:'catalogo/9- Café.jpeg' }
+      image:'catalogo/jabon-cafe-exfoliante-celulitis.jpeg' }
 ];
 
 const TESTIMONIALS = [
@@ -100,6 +100,55 @@ const FAQS = [
     { q:'¿Cómo debo conservar el jabón?', a:'Guarda el jabón en un lugar seco, alejado del agua acumulada. Usa una jabonera con drenaje entre usos. Esto maximiza la durabilidad y evita que se ablande.' },
     { q:'¿Hacen envíos a todo el Perú?', a:'Sí. Lima y Callao en 2-3 días hábiles; provincias en 5-7 días hábiles. Los pedidos se procesan dentro de las 24 horas de confirmado el pago.' },
     { q:'¿Tienen descuentos por compra en cantidad?', a:'Sí. Escríbenos por WhatsApp al +51 953 908 876 para consultar nuestros packs especiales y descuentos por volumen.' }
+];
+
+const BLOG_POSTS = [
+    {
+        id: 'piel',
+        title: '¿Cómo elegir tu jabón ideal según tu piel?',
+        tag: 'Guía',
+        image: 'imagenes/woman_using_soap.png',
+        content: `
+            <p>Elegir el jabón adecuado no es solo cuestión de aroma; es la base de una piel sana. En KARIM, formulamos cada barra para responder a necesidades específicas:</p>
+            <ul>
+                <li><strong>Para Piel Grasa:</strong> Busca ingredientes purificantes como el <strong>Aloe Vera</strong> o la <strong>Cúrcuma</strong>. Ayudan a controlar el exceso de sebo sin resecar.</li>
+                <li><strong>Para Piel Seca:</strong> Necesitas nutrición intensa. El jabón de <strong>Coco</strong> o el de <strong>Cacao</strong> son tus mejores aliados, ya que restauran la barrera lipídica.</li>
+                <li><strong>Para Piel Sensible:</strong> La <strong>Avena y Miel</strong> o la <strong>Manzanilla</strong> ofrecen una limpieza ultra-suave que calma rojeces e irritaciones.</li>
+                <li><strong>Para Piel Madura:</strong> El <strong>Colágeno</strong> y la <strong>Rosa Mosqueta</strong> ayudan a mantener la elasticidad y firmeza natural.</li>
+            </ul>
+            <p>Recuerda realizar masajes circulares suaves y enjuagar siempre con agua tibia.</p>
+        `
+    },
+    {
+        id: 'duracion',
+        title: '3 Secretos para que tu jabón dure el doble',
+        tag: 'Tips',
+        image: 'imagenes/hero_woman_soap.png',
+        content: `
+            <p>Un jabón artesanal es un producto concentrado y valioso. Sigue estos pasos para maximizar cada gramo:</p>
+            <ol>
+                <li><strong>Drenaje es Vida:</strong> Nunca dejes tu jabón en una superficie plana donde se acumule agua. Usa una jabonera con agujeros o una rejilla que permita que el aire circule.</li>
+                <li><strong>Duchas de Vapor:</strong> Intenta mantener el jabón fuera de la línea directa de la ducha cuando no lo estés usando. La humedad constante del vapor puede ablandarlo prematuramente.</li>
+                <li><strong>La Espuma es Suficiente:</strong> No necesitas frotar la barra directamente sobre todo el cuerpo. Haz espuma en tus manos y aplícala; esto rinde mucho más y es igual de efectivo para limpiar.</li>
+            </ol>
+            <p>Con estos conejos, una barra de 100g puede durar perfectamente entre 30 y 40 días de uso diario.</p>
+        `
+    },
+    {
+        id: 'peligros',
+        title: 'Peligros ocultos en los jabones comerciales',
+        tag: 'Salud',
+        image: 'imagenes/WhatsApp Image 2026-04-05 at 5.01.19 PM.jpeg',
+        content: `
+            <p>La mayoría de los "jabones" de supermercado son en realidad detergentes sintéticos. Aquí te explicamos qué evitar:</p>
+            <ul>
+                <li><strong>Sulfatos (SLS/SLES):</strong> Son los responsables de la espuma excesiva, pero también eliminan los aceites naturales de la piel, causando resequedad y dermatitis.</li>
+                <li><strong>Parabenos:</strong> Conservantes químicos que han sido cuestionados por su potencial para alterar el sistema hormonal.</li>
+                <li><strong>Fragancias Sintéticas:</strong> A menudo contienen ftalatos, que pueden irritar pieles sensibles y causar alergias respiratorias.</li>
+            </ul>
+            <p>En <strong>KARIM</strong>, reemplazamos todo esto por glicerina vegetal, aceites prensados en frío y extractos botánicos puros. Tu piel sentirá la diferencia desde la primera ducha.</p>
+        `
+    }
 ];
 
 let cart = [];
@@ -188,6 +237,22 @@ function openModal(id) {
 
 function closeModal() {
     document.getElementById('productModal').classList.remove('open');
+}
+
+function openBlogModal(id) {
+    const post = BLOG_POSTS.find(p => p.id === id);
+    if (!post) return;
+    
+    document.getElementById('mName').textContent = post.title;
+    document.getElementById('mMeta').textContent = post.tag;
+    document.getElementById('mBody').innerHTML = `
+        <img class="modal-img" src="${post.image}" alt="${post.title}" style="max-height:300px; object-fit:cover;">
+        <div class="blog-post-full" style="padding:1.5rem 0;">
+            ${post.content}
+        </div>
+        <button class="btn-submit" style="margin-top:1rem; width:100%;" onclick="closeModal()">Cerrar lectura</button>
+    `;
+    document.getElementById('productModal').classList.add('open');
 }
 
 function addToCart(id) {
@@ -403,9 +468,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1 });
 
     setTimeout(() => {
-        document.querySelectorAll('.strip, .section-head, .product-card, .promo-banner, .about-img, .about-content, .t-head, .t-card, .faq-head, .faq-item, .contact-dark, .contact-light, .newsletter').forEach((el, index) => {
+        document.querySelectorAll('.strip, .section-head, .product-card, .promo-banner, .about-img, .about-content, .t-head, .t-card, .faq-head, .faq-item, .contact-dark, .contact-light, .newsletter, .blog, .blog-card').forEach((el, index) => {
             el.classList.add('reveal');
-            if(el.classList.contains('product-card') || el.classList.contains('t-card') || el.classList.contains('faq-item')) {
+            if(el.classList.contains('product-card') || el.classList.contains('t-card') || el.classList.contains('faq-item') || el.classList.contains('blog-card')) {
                 el.style.transitionDelay = `${(index % 3) * 0.12}s`;
             }
             observer.observe(el);
