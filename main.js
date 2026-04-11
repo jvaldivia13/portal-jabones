@@ -452,6 +452,7 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
     renderProducts();
     renderTestimonials();
     renderFAQ();
